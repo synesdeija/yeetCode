@@ -32,4 +32,4 @@ function containsDuplicate(nums){
     return false
 }
 
-console.log(containsDuplicates([1,1,1,3,3,4,3,2,4,2]) , 'true')
+console.log(containsDuplicate([1,1,1,3,3,4,3,2,4,2]) )
