@@ -32,14 +32,14 @@ function majorityElement(numsArray){
 
     for(const num of numsArray){
         elements[num] = elements[num] + 1 || 1
-        elem[num] > numsArray.length / 2
+        // elements[num] > numsArray.length / 2
  }
-//  for(const n in elements){
-//     if(elements[n] > count){
-//         count = elements[n]
-//         majElem = n
-//     }
-//  }
+ for(const n in elements){
+    if(elements[n] > count){
+        count = elements[n]
+        majElem = n
+    }
+ }
  return majElem
 
 }
