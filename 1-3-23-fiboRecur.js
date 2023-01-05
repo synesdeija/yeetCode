@@ -24,7 +24,7 @@
 
 
 
-//a For Loop method:
+//a For Loop method:1.3.22
 function fibonacci(n){
     let arr = [0,1]
     for (let i = 2; i <= n; i++){
@@ -37,7 +37,8 @@ console.log(fibonacci(2),1)
 console.log(fibonacci(4),3)
 
 
-//recursive method:
+//recursive method: fib(5) so we're looking for the 5th index (6th number) -- my method from 1.3.22
+//we're looking for the Base Case (0), and the Exit Case () (the 5th index in the array of the fibonacci sequence is 5) so fib(5) = 5
 function fibonacci(n){
     if (n < 2){
         return n
@@ -46,6 +47,12 @@ function fibonacci(n){
     }
 }
 
+
+//1.4.22 : Leon's Version
+function fib(num){
+    if(num < 2){return num}
+    return fib(num - 1) + fib(num - 2)
+}
 
 
 //countDown recursive function
