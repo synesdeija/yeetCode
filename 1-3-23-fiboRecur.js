@@ -65,3 +65,21 @@ function countDown(n){
     }
 }
 console.log(countDown(3))
+
+
+//with memoization: 
+//    fib(5) === [0,1,1,2,3,5]    BASE CASE === n < 2
+
+const memoize = {}
+function fib(n) {
+    if (n <= 1) {
+        return n
+    }else if( memoize[n] ) {
+        return memoize[n]
+    }else{
+        let result = fib(n - 1) + fib(n - 2)
+        memoize[n] = result
+        return result
+    }
+}
+console.log(fib(5))
